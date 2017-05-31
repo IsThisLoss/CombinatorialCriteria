@@ -23,21 +23,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += main.cpp\
-    InputDialog.cpp \
-    SeriesTable.cpp \
-    TableModel.cpp \
-    MainWindow.cpp
+SOURCES += src/main.cpp\
+    src/InputDialog.cpp \
+    src/SeriesTable.cpp \
+    src/TableModel.cpp \
+    src/MainWindow.cpp \
 
 HEADERS  += \
-    InputDialog.h \
-    SeriesTable.h \
-    TableModel.h \
-    MainWindow.h
+    include/InputDialog.h \
+    include/SeriesTable.h \
+    include/TableModel.h \
+    include/MainWindow.h
 
 FORMS    += \
-    InputDialog.ui \
-    MainWindow.ui
+    ui/InputDialog.ui \
+    ui/MainWindow.ui
 
 RESOURCES += \
-    res.qrc
+    res/res.qrc

@@ -4,8 +4,8 @@
 #include <QDebug>
 #include <QMessageBox>
 
-#include "InputDialog.h"
-#include "MainWindow.h"
+#include "include/InputDialog.h"
+#include "include/MainWindow.h"
 #include "ui_MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :

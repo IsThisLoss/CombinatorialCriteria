@@ -1,5 +1,6 @@
-#include "SeriesTable.h"
 #include <cstring>
+
+#include "include/SeriesTable.h"
 
 SeriesTable::SeriesTable()
 {

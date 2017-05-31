@@ -1,4 +1,4 @@
-#include "InputDialog.h"
+#include "include/InputDialog.h"
 #include "ui_InputDialog.h"
 
 InputDialog::InputDialog(QWidget *parent) :

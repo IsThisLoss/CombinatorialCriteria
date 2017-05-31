@@ -1,9 +1,10 @@
-#include "TableModel.h"
-
 #include <QDataStream>
 #include <QFile>
 #include <QColor>
 #include <QDebug>
+#include <QColor>
+
+#include "include/TableModel.h"
 
 // Stats
 Stats::Stats()
