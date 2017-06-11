@@ -73,15 +73,27 @@ void MainWindow::setStats(const Stats& stats)
     ui->Rmin->setText(QString::number(stats.Rmin));
     ui->Rmax->setText(QString::number(stats.Rmax));
 
-    if (stats.depends)
+
+    switch (stats.depends)
     {
-        ui->result->setText("Здесь присутствует систематическая погрешность");
-        ui->result->setStyleSheet("background-color: rgb(76, 175, 80)");
-    }
-    else
-    {
-        ui->result->setText("Систематическая погрешность отсутствует");
-        ui->result->setStyleSheet("background-color: rgb(244, 67, 54)");
+        case 1:
+        {
+            ui->result->setText("Здесь присутствует систематическая погрешность");
+            ui->result->setStyleSheet("background-color: rgb(76, 175, 80)");
+            break;
+        }
+        case 0:
+        {
+            ui->result->setText("Систематическая погрешность отсутствует");
+            ui->result->setStyleSheet("background-color: rgb(244, 67, 54)");
+            break;
+        }
+        default:
+        {
+            ui->result->setText("Невозможно определить наличие\nсистематической погрешности");
+            ui->result->setStyleSheet("background-color: white");
+            break;
+        }
     }
 }
 

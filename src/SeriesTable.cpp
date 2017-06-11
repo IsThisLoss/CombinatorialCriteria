@@ -29,14 +29,14 @@ SeriesTable::SeriesTable()
     table[4][4] = {8, 18};
 }
 
-bool SeriesTable::check(size_t n_1, size_t n_2, int R, int& R_min, int& R_max) const
+int SeriesTable::check(size_t n_1, size_t n_2, int R, int& R_min, int& R_max) const
 {
     if (valid(n_1) && valid(n_2))
     {
         auto pair = table[map(n_2)][map(n_1)];
         R_min = pair.R_min;
         R_max = pair.R_max;
-        return (R_min <= R && R <= R_max);
+        return (R < R_min || R > R_max);
     }
-    return false;
+    return -1;
 }

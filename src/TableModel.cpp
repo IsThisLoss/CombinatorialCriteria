@@ -19,7 +19,7 @@ void Stats::clear()
     len = 0;
     Rmin = 0;
     Rmax = 0;
-    depends = false;
+    depends = -1;
 }
 
 // TableModel::Row

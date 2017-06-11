@@ -42,4 +42,4 @@ FORMS    += \
 RESOURCES += \
     res/res.qrc
 
-# RC_FILE = icon.rc
+RC_FILE = icon.rc

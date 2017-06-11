@@ -26,9 +26,9 @@ public:
      * @param R is the number of series
      * @param R_min is a R_min value used to check
      * @param R_max is a R_max value used to check
-     * @return true if R_min <= R <= R_max, false otherwise
+     * @return 1 if R < R_min or R > R_max, 0 otherwise, -1 if failed to get R_min and R_max
      */
-    bool check(size_t n_1, size_t n_2, int R, int& R_min, int& R_max) const;
+    int check(size_t n_1, size_t n_2, int R, int& R_min, int& R_max) const;
 
 private:
     /**

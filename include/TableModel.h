@@ -21,7 +21,7 @@ struct Stats final
     size_t numberOfSeries;
     size_t n[2];
     size_t len;
-    bool depends;
+    int depends;
     int Rmin, Rmax;
 
     /**
