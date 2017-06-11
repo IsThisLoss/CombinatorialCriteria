@@ -69,7 +69,7 @@ void TableModel::calculateTheNumberOfSeries()
 {
     stats.numberOfSeries = 0;
     for (int i = 1; i < rows.size(); i++)
-        if (rows[i].diff * rows[i-1].diff < 0)
+        if (rows[i].diff == 0 || rows[i].diff * rows[i-1].diff < 0)
             stats.numberOfSeries++;
     stats.numberOfSeries++;
 }

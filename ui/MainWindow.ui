@@ -12,7 +12,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../res/res.qrc">
-    <normaloff>:/img/icon.jpg</normaloff>:/img/icon.jpg</iconset>
+    <normaloff>:/img/icon.ico</normaloff>:/img/icon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
