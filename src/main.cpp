@@ -5,7 +5,7 @@
  *         </a>
  * @copyright Do what you want, but you must reference to the original code
  * (this is it)
- * @version 0.9-rc
+ * @version 0.9.2
  *
  * @abstract This is a program to check whether input sequence of values
  * contains systematic error or not via combinatorial criteria.
